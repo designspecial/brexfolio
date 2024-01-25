@@ -253,14 +253,14 @@ a {
 }
 
 .mil-light-soft {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 }
 .mil-light-soft a {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255, 0.3) !important;
 }
 
 .mil-dark-soft {
-  color: rgba(32, 33, 36, 0.5);
+  color: rgba(32, 33, 36, 0.3);
 }
 
 .mil-marker {
@@ -2989,4 +2989,10 @@ html.is-animating .mil-menu-transition ul li.mil-active a:before {
 .show-more:hover{
   color: white;
   background-color: rgb(76, 175, 80);;
+}
+.image-with-shadow {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+.section-div{
+  background-color: #e4e4e4;
 }
