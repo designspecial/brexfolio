@@ -1,11 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx" class="is-animating">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- bootstrap grid css -->
+    <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="css/plugins/swiper.min.css">
+    <!-- courtney css -->
+    <link rel="stylesheet" href="css/light-mode.css">
+    <!-- page name -->
+    <title>Brexfolio</title>
+<style>
+    .mil-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mil-iframe-container {
+    width: 100%;
+    width: 750px; /* Adjust the maximum width as needed */
+    height: 500px;
+    margin-bottom: 20px; /* Add space between the iframe and other elements */
+}
+
+.mil-iframe-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Adjust other styles as needed */
+
+@media (max-width: 768px) {
+    .mil-iframe-container {
+        max-width: 100%; /* Full width on small screens */
+       
+    }
+}
+    @media (max-width: 768px) {
+            .mil-iframe-container {
+                max-width: 100%; /* Full width on small screens */
+            }
+
+            .mil-iframe-container iframe {
+                width: 100%;
+                height: 100%;
+            }
+
+            .mil-iframe-mobile,
+            .mil-iframe-tablet {
+                display: block; /* Show mobile and tablet iframes */
+            }
+
+            .mil-iframe-desktop {
+                display: none; /* Hide desktop iframe on small screens */
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .mil-iframe-container {
+                max-width: 100%; /* Adjust tablet width as needed */
+            }
+
+            .mil-iframe-container iframe {
+                width: 100%;
+                height: 100%;
+            }
+
+            .mil-iframe-mobile {
+                display: none; /* Hide mobile iframe on tablets */
+            }
+
+            .mil-iframe-tablet,
+            .mil-iframe-desktop {
+                display: block; /* Show tablet and desktop iframes */
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .mil-iframe-mobile,
+            .mil-iframe-tablet {
+                display: none; /* Hide mobile and tablet iframes on large screens */
+            }
+
+            .mil-iframe-desktop {
+                display: block; /* Show desktop iframe on large screens */
+            }
+        }
+
+</style>
 </head>
-<body>
-    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmLRQ2KgvVGgqmPd3HbsHzA%2FResponsive-Landing-page-design-Challenge%3Ftype%3Ddesign%26node-id%3D1-1188%26t%3DWLaIYByzqsapD2oO-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26mode%3Ddesign" allowfullscreen></iframe>
+
+<body class="mil-fw-page">
+
+    <!-- wrapper -->
+    <div class="mil-wrapper" id="top">
+
+        <!-- preloader -->
+        <div class="mil-preloader-frame">
+            <div class="mil-preloader-content" style="transform: scale(.6) translateY(200px); opacity: 0;">
+                <div class="mil-preloader">
+                    <div class="mil-circ-1"></div>
+                    <div class="mil-circ-2"></div>
+                    <div class="mil-circ-3"></div>
+                    <div class="mil-circ-4"></div>
+                </div>
+                <div class="mil-upper">Loading</div>
+            </div>
+        </div>
+        <!-- preloader end -->
+
+        <div class="mil-frame">
+
+            <!-- top bar -->
+            <div class="mil-top-panel">
+
+                <!-- You need to remove the "mil-dot" class if you don't need a dot -->
+                <a href="index.html"><img class="mil-logo" src="/img/logos/My_logo.png" alt="brex logo"></a>
+
+                <div class="mil-navigation">
+                    <nav id="swupMenu" class="mil-menu-transition">
+                        <ul>
+                            <li class="mil-has-children">
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li class="mil-has-children mil-active">
+                                <a href="">Projects</a>
+                                <ul>
+                                    <li><a href="project-single.html">Foodie</a></li>
+                                    <li><a href="project-single.html">E-learning Website</a></li>
+                                    <li><a href="project-single.html">Job Finder</a></li>
+                                    <li><a href="project-single.html">Hey Mobile</a></li>
+                                    <li><a href="project-single.html">Lersha App</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact.html">Resume</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="mil-top-panel-btns">
+                    <div class="mil-menu-btn">
+                        <span></span>
+                    </div>
+                </div>
+
+            </div>
+            <!-- top bar end -->
+            <!-- back to top -->
+            <div class="mil-back-to-top">
+                <a href="#top" class="mil-link mil-btt-icon">
+                    <span>Back to top</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+            <!-- back to top end -->
+
+        </div>
+      <!-- content -->
+      <div class="mil-content">
+
+        <div class="mil-scroll-wrapper transition-fade" id="swupMain">
+            <div class="mil-container-fw">
+                <div class="mil-iframe-container mil-iframe-mobile">
+                    <!-- Mobile Design Iframe -->
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmLRQ2KgvVGgqmPd3HbsHzA%2FResponsive-Landing-page-design-Challenge%3Ftype%3Ddesign%26node-id%3D213-1090%26t%3DJNsA3ArFMEK2ZhW6-1%26scaling%3Dscale-down%26page-id%3D213%253A122%26mode%3Ddesign" allowfullscreen></iframe>
+                </div>
+
+                <div class="mil-iframe-container mil-iframe-tablet">
+                    <!-- Tablet Design Iframe -->
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmLRQ2KgvVGgqmPd3HbsHzA%2FResponsive-Landing-page-design-Challenge%3Ftype%3Ddesign%26node-id%3D213-189%26t%3DxrhJzRSwyq4r13A6-1%26scaling%3Dscale-down%26page-id%3D1%253A1164%26mode%3Ddesign" allowfullscreen></iframe>
+                </div>
+
+                <div class="mil-iframe-container mil-iframe-desktop">
+                    <!-- Desktop Design Iframe -->
+                    <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="750" height="480" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmLRQ2KgvVGgqmPd3HbsHzA%2FResponsive-Landing-page-design-Challenge%3Ftype%3Ddesign%26node-id%3D1-1188%26t%3DXWRZk08URd6ZarBV-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26mode%3Ddesign" allowfullscreen></iframe>
+                </div>
+
+                <!-- Rest of your HTML content -->
+
+            </div>
+        </div>
+
+        <!-- Add your existing HTML content here -->
+
+    </div>
+<!-- content end -->
+
+    </div>
+    <!-- wrapper end -->
+
+    <!-- jQuery js -->
+    <script src="js/plugins/jquery.min.js"></script>
+    <!-- swup js -->
+    <script src="js/plugins/swup.min.js"></script>
+    <!-- swup body class plugin js -->
+    <script src="js/plugins/SwupBodyClassPlugin.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/plugins/swiper.min.js"></script>
+    <!-- gsap js -->
+    <script src="js/plugins/gsap.min.js"></script>
+    <!-- scroll smoother -->
+    <script src="js/plugins/smooth-scroll.js"></script>
+    <!-- scroll trigger js -->
+    <script src="js/plugins/ScrollTrigger.min.js"></script>
+    <!-- parallax js -->
+    <script src="js/plugins/parallax.js"></script>
+    <!-- courtney js -->
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>

@@ -18,7 +18,7 @@
     <!-- page name -->
     <title>Brexfolio</title>
 <style>
-    .mil-content {
+   .mil-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,6 +44,25 @@
        
     }
 }
+    @media (max-width: 768px) {
+            .mil-iframe-container {
+                max-width: 100%; /* Full width on small screens */
+            }
+
+            .mil-iframe-container iframe {
+                width: 100%;
+                height: 100%;
+            }
+
+            .mil-iframe-mobile,
+            .mil-iframe-tablet {
+                display: block; /* Show mobile and tablet iframes */
+            }
+
+        }
+
+      
+
 
 </style>
 </head>
@@ -123,9 +142,27 @@
 
     <div class="mil-scroll-wrapper transition-fade" id="swupMain">
         <div class="mil-container-fw">
+            <div class="mil-banner-sm mil-center" style="margin-bottom: 20px;">
+                <div class="mil-banner-top mil-up" style="height: 60px;"></div>
+                <ul class="mil-breadcrumbs mil-up">
+                    <li><a href="index.html">Homepage</a></li>
+                    <li><a href="#">Responsive Design </a></li>
+                </ul>
+            </div>
             <!-- Casestudy -->
             <section class="mil-p-90-60" style="padding-top: 30px;">
-                <div class="mil-iframe-container" >
+                <div class="mil-iframe-container mil-iframe-mobile">
+                    <!-- Mobile Design Iframe -->
+                    <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmLRQ2KgvVGgqmPd3HbsHzA%2FResponsive-Landing-page-design-Challenge%3Ftype%3Ddesign%26node-id%3D213-1090%26t%3DJNsA3ArFMEK2ZhW6-1%26scaling%3Dscale-down%26page-id%3D213%253A122%26mode%3Ddesign" allowfullscreen></iframe>
+                </div>
+
+                <div class="mil-iframe-container mil-iframe-tablet">
+                    <!-- Tablet Design Iframe -->
+                    <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmLRQ2KgvVGgqmPd3HbsHzA%2FResponsive-Landing-page-design-Challenge%3Ftype%3Ddesign%26node-id%3D213-189%26t%3DxrhJzRSwyq4r13A6-1%26scaling%3Dscale-down%26page-id%3D1%253A1164%26mode%3Ddesign" allowfullscreen></iframe>
+                </div>
+
+                <div class="mil-iframe-container mil-iframe-desktop">
+                    <!-- Desktop Design Iframe -->
                     <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="750" height="480" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmLRQ2KgvVGgqmPd3HbsHzA%2FResponsive-Landing-page-design-Challenge%3Ftype%3Ddesign%26node-id%3D1-1188%26t%3DXWRZk08URd6ZarBV-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26mode%3Ddesign" allowfullscreen></iframe>
                 </div>
             </section>
