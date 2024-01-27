@@ -17,10 +17,38 @@
     <link rel="stylesheet" href="css/light-mode.css">
     <!-- page name -->
     <title>Brexfolio</title>
+<style>
+    .mil-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.mil-iframe-container {
+    width: 100%;
+    width: 750px; /* Adjust the maximum width as needed */
+    height: 500px;
+    margin-bottom: 20px; /* Add space between the iframe and other elements */
+}
+
+.mil-iframe-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* Adjust other styles as needed */
+
+@media (max-width: 768px) {
+    .mil-iframe-container {
+        max-width: 100%; /* Full width on small screens */
+       
+    }
+}
+
+</style>
 </head>
 
-<body class="mil-fw-page mil-100-page">
+<body class="mil-fw-page">
 
     <!-- wrapper -->
     <div class="mil-wrapper" id="top">
@@ -43,34 +71,38 @@
 
             <!-- top bar -->
             <div class="mil-top-panel">
+
+                <!-- You need to remove the "mil-dot" class if you don't need a dot -->
                 <a href="index.html"><img class="mil-logo" src="/img/logos/My_logo.png" alt="brex logo"></a>
 
                 <div class="mil-navigation">
                     <nav id="swupMenu" class="mil-menu-transition">
                         <ul>
-                            <li class="mil-has-children mil-active">
+                            <li class="mil-has-children">
                                 <a href="index.html">Home</a>
                             </li>
-                            <li class="mil-has-children">
+                            <li class="mil-has-children mil-active">
                                 <a href="">Projects</a>
                                 <ul>
-                                    <li><a href="portfolio-1.html">Foodie</a></li>
-                                    <li><a href="portfolio-1.html">E-learning Website</a></li>
-                                    <li><a href="portfolio-2.html">Job Finder</a></li>
-                                    <li><a href="portfolio-3.html">Hey Mobile</a></li>
-                                    <li><a href="portfolio-4.html">Lersha App</a></li>
+                                    <li><a href="project-single.html">Foodie</a></li>
+                                    <li><a href="project-single.html">E-learning Website</a></li>
+                                    <li><a href="project-single.html">Job Finder</a></li>
+                                    <li><a href="project-single.html">Hey Mobile</a></li>
+                                    <li><a href="project-single.html">Lersha App</a></li>
                                 </ul>
                             </li>
                             <li><a href="contact.html">Contact</a></li>
-                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="contact.html">Resume</a></li>
                         </ul>
                     </nav>
                 </div>
+
                 <div class="mil-top-panel-btns">
                     <div class="mil-menu-btn">
                         <span></span>
                     </div>
                 </div>
+
             </div>
             <!-- top bar end -->
             <!-- back to top -->
@@ -86,143 +118,67 @@
             <!-- back to top end -->
 
         </div>
+      <!-- content -->
+<div class="mil-content">
 
-        <!-- content -->
-       
-        <div class="mil-content">
-
-            <div class="mil-scroll-wrapper transition-fade" id="swupMain" >
-                <div class="mil-container-100">
-                    <section class="mil-p-90-0">
-                        <div class="row">
-                            <div class="col-lg-9">
-                                <div class="mil-swiper-container mil-portfolio-carousel mil-up">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-item-2 mil-carousel-item">
-                                                <div class="mil-cover-frame">
-                                                    <img src="img/portfolio/landing_page.png" alt="cover" data-swiper-parallax="-130" data-swiper-parallax-scale="1.25">
-                                                </div>
-                                               <div class="mil-description" data-swiper-parallax-y="-100%" data-swiper-parallax-duration="400">
-                                                    <h4>Aevoe. Visual Identity</h4>
-                                                    <a href="project-1.html" class="mil-btn">View project</a>
-                                                </div> 
-                                            </div>
-
-                                        </div>
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-item-2 mil-carousel-item">
-                                                <div class="mil-cover-frame">
-                                                    <img src="img/portfolio/iMac.png" alt="cover" data-swiper-parallax="-130" data-swiper-parallax-scale="1.25">
-                                                </div>
-                                              <div class="mil-description" data-swiper-parallax-y="-100%" data-swiper-parallax-duration="400">
-                                                    <h4>Monograph TS</h4>
-                                                    <a href="project-1.html" class="mil-btn">View project</a>
-                                                </div> 
-                                            </div>
-
-                                        </div>
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-item-2 mil-carousel-item">
-                                                <div class="mil-cover-frame">
-                                                    <img src="img/portfolio/MacBook_Pro.png" alt="cover" data-swiper-parallax="-130" data-swiper-parallax-scale="1.25">
-                                                </div>
-                                              <div class="mil-description" data-swiper-parallax-y="-100%" data-swiper-parallax-duration="400">
-                                                    <h4>Home sequrity camera</h4>
-                                                    <a href="https://www.figma.com/proto/mLRQ2KgvVGgqmPd3HbsHzA/Responsive-Landing-page-design-Challenge?type=design&node-id=1-1188&t=WLaIYByzqsapD2oO-1&scaling=scale-down&page-id=0%3A1&mode=design" target="_blank" class="mil-btn">View prototype</a>    
-                                                </div> 
-                                            </div>
-
-                                        </div>
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-item-2 mil-carousel-item">
-                                                <div class="mil-cover-frame">
-                                                    <img src="img/portfolio/iPad_Pro.png" alt="cover" data-swiper-parallax="-130" data-swiper-parallax-scale="1.25">
-                                                </div>
-                                               <div class="mil-description" data-swiper-parallax-y="-100%" data-swiper-parallax-duration="400">
-                                                    <h4>Unique card holder</h4>
-                                                    <a href="project-1.html" class="mil-btn">View project</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide">
-
-                                            <div class="mil-portfolio-item mil-item-2 mil-carousel-item">
-                                                <div class="mil-cover-frame">
-                                                    <img src="img/portfolio/iPhone_11_Pro.png" alt="cover" data-swiper-parallax="-130" data-swiper-parallax-scale="1.25">
-                                                </div>
-                                               <div class="mil-description" data-swiper-parallax-y="-100%" data-swiper-parallax-duration="400">
-                                                    <h4>Unique card holder</h4>
-                                                    <a href="" class="mil-btn">View project</a>
-                                                </div> 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-3">
-                                <div class="mil-carousel-nav">
-                                    <div class="mil-carousel-nav-arrow mil-portfolio-prev">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                            <polyline points="12 5 19 12 12 19"></polyline>
-                                        </svg>
-                                    </div>
-                                    <div class="mil-carousel-nav-arrow mil-portfolio-next">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                                            <polyline points="12 5 19 12 12 19"></polyline>
-                                        </svg>
-                                    </div>
-                                    <div class="mil-portfolio-pagination mil-upper mil-dark"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
+    <div class="mil-scroll-wrapper transition-fade" id="swupMain">
+        <div class="mil-container-fw">
+            <!-- Casestudy -->
+            <section class="mil-p-90-60" style="padding-top: 30px;">
+                <div class="mil-iframe-container" >
+                    <iframe style="border: 0px solid rgba(0, 0, 0, 0.1);" width="750" height="480" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FmLRQ2KgvVGgqmPd3HbsHzA%2FResponsive-Landing-page-design-Challenge%3Ftype%3Ddesign%26node-id%3D1-1188%26t%3DXWRZk08URd6ZarBV-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26mode%3Ddesign" allowfullscreen></iframe>
                 </div>
-            </div>
-            
-
-            <div class="mil-right-banner" id="scene">
-                <!-- scrollbar -->
-                <div class="mil-progress-track">
-                    <div class="mil-progress"></div>
+            </section>
+            <!-- casestudy end -->
+            <div class="mil-divider mil-up mil-mb-90"></div>
+            <!-- footer -->
+            <footer style="justify-content: center;">
+                <div class="social-icons">
+                    <a href="#" class="icon" data-name="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#" class="icon" data-name="Behance"><i class="fab fa-behance fa-2x"></i></a>
+                    <a href="#" class="icon" data-name="Facebook"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="icon" data-name="Telegram"><i class="fab fa-telegram fa-2x"></i></a>
                 </div>
-                <!-- scrollbar end -->
-                <div class="mil-banner-wrapper" data-depth="1">
-                    <div id="swupBg" class="mil-banner-frame"></div>
-                </div>
-                <div class="mil-banner-wrapper" data-depth="0.2">
-                    <div id="swupPerson" class="mil-banner-frame"></div>
-                </div>
-                <div class="mil-flying-skills" data-depth="0.1">
-                    <div id="swupSkills" class="mil-skills-frame">
-                        <div class="mil-item" style="top: 30%; left: 10%">
-                            <img src="img/logos/1.png" alt="logo">
-                        </div>
-                        <div class="mil-item" style="bottom: 15%; left: 20%">
-                            <img src="img/logos/2.png" alt="logo">
-                        </div>
-                        <div class="mil-item" style="bottom: 45%; right: 15%">
-                            <img src="img/logos/3.png" alt="logo">
-                        </div>
-                        <div class="mil-el mil-addition-el-1">+</div>
-                        <div class="mil-el mil-addition-el-2">+</div>
-                        <div class="mil-el mil-addition-el-3"></div>
-                        <div class="mil-el mil-addition-el-4"></div>
-                    </div>
-                </div>
-            </div>
+            </footer>
+            <!-- footer end -->
 
         </div>
-        
-        <!-- content -->
+    </div>
+
+    <div class="mil-right-banner" id="scene">
+        <!-- scrollbar -->
+        <div class="mil-progress-track">
+            <div class="mil-progress"></div>
+        </div>
+        <!-- scrollbar end -->
+        <div class="mil-banner-wrapper" data-depth="1">
+            <div id="swupBg" class="mil-banner-frame"></div>
+        </div>
+        <div class="mil-banner-wrapper" data-depth="0.2">
+            <div id="swupPerson" class="mil-banner-frame"></div>
+        </div>
+        <div class="mil-flying-skills" data-depth="0.1">
+            <div id="swupSkills" class="mil-skills-frame">
+                <div class="mil-item" style="top: 30%; left: 10%">
+                    <img src="img/logos/1.png" alt="logo">
+                </div>
+                <div class="mil-item" style="bottom: 15%; left: 20%">
+                    <img src="img/logos/2.png" alt="logo">
+                </div>
+                <div class="mil-item" style="bottom: 45%; right: 15%">
+                    <img src="img/logos/3.png" alt="logo">
+                </div>
+                <div class="mil-el mil-addition-el-1">+</div>
+                <div class="mil-el mil-addition-el-2">+</div>
+                <div class="mil-el mil-addition-el-3"></div>
+                <div class="mil-el mil-addition-el-4"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- content end -->
+
     </div>
     <!-- wrapper end -->
 
