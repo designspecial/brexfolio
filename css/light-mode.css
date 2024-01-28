@@ -2996,3 +2996,39 @@ html.is-animating .mil-menu-transition ul li.mil-active a:before {
 .section-div{
   background-color: #e4e4e4;
 }
+.mil-iframe-container {
+  width: 100%;
+  width: 750px; /* Adjust the maximum width as needed */
+  height: 500px;
+  margin-bottom: 20px; /* Add space between the iframe and other elements */
+}
+
+.mil-iframe-container iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Adjust other styles as needed */
+
+@media (max-width: 768px) {
+  .mil-iframe-container {
+      max-width: 100%; /* Full width on small screens */
+     
+  }
+}
+  @media (max-width: 768px) {
+          .mil-iframe-container {
+              max-width: 100%; /* Full width on small screens */
+          }
+
+          .mil-iframe-container iframe {
+              width: 100%;
+              height: 100%;
+          }
+
+          .mil-iframe-mobile,
+          .mil-iframe-tablet {
+              display: block; /* Show mobile and tablet iframes */
+          }
+
+      }
