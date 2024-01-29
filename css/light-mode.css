@@ -2997,8 +2997,7 @@ html.is-animating .mil-menu-transition ul li.mil-active a:before {
   background-color: #e4e4e4;
 }
 .mil-iframe-container {
-  width: 100%;
-  width: 750px; /* Adjust the maximum width as needed */
+  width: 100%;/* Adjust the maximum width as needed */
   height: 500px;
   margin-bottom: 20px; /* Add space between the iframe and other elements */
 }
