@@ -2998,7 +2998,7 @@ html.is-animating .mil-menu-transition ul li.mil-active a:before {
 }
 .mil-iframe-container {
   width: 100%;/* Adjust the maximum width as needed */
-  height: 500px;
+  height: 650px;
   margin-bottom: 20px; /* Add space between the iframe and other elements */
 }
 
