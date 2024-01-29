@@ -792,6 +792,7 @@ frame
     stroke: rgb(32, 33, 36);
   }
   
+  
 }
 
 .mil-left-panel {
@@ -819,7 +820,10 @@ frame
   .mil-left-panel {
     display: none;
   }
+
 }
+
+
 .mil-left-panel .mil-page-name {
   width: 300px;
   -webkit-transform: rotate(-90deg) translateX(-140px);
@@ -1253,6 +1257,8 @@ right banner
   .mil-right-banner {
     display: none;
   }
+
+ 
 }
 .mil-right-banner img {
   position: absolute;
@@ -1400,7 +1406,10 @@ content banner
   .mil-side-banner .mil-banner-top {
     height: 50px;
   }
+  
 }
+
+
 @media screen and (max-height: 750px) {
   .mil-side-banner {
     height: auto;
@@ -1408,7 +1417,7 @@ content banner
   .mil-side-banner .mil-banner-title {
     padding: 30px 0;
   }
- 
+
 }
 
 .mil-banner-sm {
@@ -3031,3 +3040,4 @@ html.is-animating .mil-menu-transition ul li.mil-active a:before {
           }
 
       }
+   
