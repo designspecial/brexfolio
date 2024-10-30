@@ -3040,4 +3040,24 @@ html.is-animating .mil-menu-transition ul li.mil-active a:before {
           }
 
       }
-   
+
+
+      .highlight-text {
+        position: relative;
+        color: #4caf50;
+        font-weight: bold;
+    }
+    
+    .highlight-text::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -5px;
+        height: 8px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="10"><path d="M0 5 Q 25 0, 50 5 T 100 5" fill="none" stroke="%234caf50" stroke-width="2" stroke-linecap="round"/></svg>');
+    }
+    
